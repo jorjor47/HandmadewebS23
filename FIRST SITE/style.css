@@ -1,0 +1,49 @@
+body {
+
+    color:indigo;
+    background-color:aqua;
+    font-size: 25px;
+    max-width: 60px;
+    margin:0 auto;
+    text-align: center;
+}
+
+p {
+            color:red;
+            background-color:white;
+            font-size: 30px;
+            border: 2px solid black;
+            padding: 20px;
+            /* margin: 10px auto; */
+            /* max-width: 600px; */
+            /* height: 300px; */
+            text-align: center;
+            
+        }
+        p:hover {
+            background-color: black;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+       
+       
+ a {
+    color:darkorange;
+    text-decoration:none;
+}
+
+a:hover {
+   color:yellow; 
+   font-size:40px;
+   text-decoration: line-through;
+}
+
+.special {
+    font-size: 60px;
+}
+
+.new {
+    background-color:yellowgreen;
+}
