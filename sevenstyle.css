@@ -1,0 +1,68 @@
+
+body {
+    Font-family: 'garamond';
+    font-size: 23px;
+    max-width: 800px;
+    Margin: 0 auto;
+    background-color:grey;
+    text-align: center;
+
+}
+h1 {
+    font-family:'garamond';
+    font-size:95px;
+
+}
+h2 {
+    font-family:'garamond';
+    font-size:60px;
+    text-shadow: 3px 3px rgb(177, 174, 174);
+
+}
+span {
+    font-size: 23px;
+    vertical-align: top;
+  }
+.red {
+    color:red;
+}
+.big {
+    font-size: 80px;
+}
+.h1 {
+    font-size: 60px;
+}
+.fitcontent {
+    max-width:fit-content;
+    margin: 0 auto;
+    text-align:center;
+}
+.smallpadding {
+    padding:1px;
+}
+.italic {
+    font-style:italic;
+    font-size:25px;
+}
+.border {
+    border-style:double;
+    border-width:8px;
+    padding:10px;
+}
+.border2 {
+    border: 30px solid transparent;
+    padding: 10px;
+    border-image: url(border4-01.png) 30 round;
+}
+
+a {
+    color:rgba(213, 217, 217, 0.42);
+}
+hr {
+    background-color:black;
+    border-color:black;
+}
+ul {
+    list-style:circle;
+    color:rgba(213, 217, 217, 0.42);
+}
