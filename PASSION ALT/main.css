@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Aboreto', cursive; 
+    max-width:600px;
+    margin: 0 auto;
+    text-align: left;
+    overflow:hidden;
+    top:-20
+    /* background-color:black; */
+}
+
+h1 {
+    font-family: 'Faster One', cursive;
+}
+
+.header {
+width :400px;
+border: 1px solid;
+left:50%;
+}
+
+.screen{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0px;
+    /* background-color: black; */
+}
+
+.left{
+    position:sticky;
+    text-align:center;
+    /* background-color:rgba(24, 24, 240, 0.311); */
+    top:0px;
+    left:20px;
+}
+
+
+
+.right{
+    /* background-color:green; */
+    text-align:center;
+    right:0px;
+    top:0px;
+}
+.column {
+    position: absolute;
+    width: 33.3%;
+    border: 2px solid;
+    /* height:fit-content; */
+    /* background-color:rgba(137, 43, 226, 0.354) */
+}
+
+.mid{
+    /* position:sticky; */
+    text-align:center;
+    /* background-color:rgba(137, 43, 226, 0.354); */
+    width:fit-content;
+    left:45.35%;
+    height:990px;
+    top:0px;
+}
+
+.sticky-container{
+    width:33.3%;
+    position:relative;
+    left:0px;
+    top:0px;
+    z-index:-1
+}
+
+.left{
+    position:absolute;
+    text-align:center;
+    /* background-color:rgba(24, 24, 240, 0.311); */
+    top:0px;
+    width:600px;
+    left:0px;
+    
+}
+.seven1{
+    position:absolute;
+    font-size:90px;
+    top:700px;
+    left:400px;
+    /* background-color: chartreuse; */
+    z-index:2;
+    /* border-color: blue; */
+    /* border:3px solid; */
+}
+.seven2{
+    position:absolute;
+    font-size:80px;
+    bottom:380px;
+    right:400px;
+    /* background-color: chartreuse; */
+    z-index:2;
+    /* border-color: blue; */
+    /* border:3px solid; */
+}
+.seven3{
+    position:absolute;
+    font-size:90px;
+    z-index:2;
+    left:20px;
+    top:460px;
+}
+.seven4{
+    position:fixed;
+    font-size:90px;
+    z-index:2;
+    right:40px;
+    top:500px;
+}
+.hidden:hover p{
+    color:rgba(137, 43, 226, 0.354);
+    filter:blur(2px);
+}
+
+.big{
+    font-size:50px;
+}
+.white{
+    color:white;
+}
+
+.blur{
+    position:absolute;
+    background-color:rgba(137, 43, 226, 0.354);
+    z-index:-3;
+    
+    filter:blur(6px);
+    height:540px;
+    width:610px;
+    left:0px;
+    top:0px;
+}
+
+.blurmiddle{
+    position:absolute;
+    background-color:rgba(137, 43, 226, 0.354);
+    z-index:-3;
+    left:640px;
+
+    filter:blur(6px);
+    width:180px;
+    height:990px
+}
+
+.blurright{
+    position:absolute;
+    background-color:rgba(137, 43, 226, 0.354);
+    z-index:-3;
+    right:0px;
+
+    filter:blur(6px);
+    width:500px;
+    height:410px;
+}
