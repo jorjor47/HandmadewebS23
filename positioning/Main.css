@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    background-color:slategrey;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    margin-top: 10px;
+
+}
+
+.relative {
+    background-color: chocolate;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.fixed {
+    background-color: darkmagenta;
+    position:fixed;
+    top: 10px;
+    left: 10px;
+    margin:0;
+    z-index:-1;
+}
+
+.absolute {
+    background-color:lightpink;
+    position:absolute;
+    top:50px;
+    left:50px;
+    width:50px;
+    height:50px;
+}
+
+.sticky {
+    background-color: firebrick;
+    position:sticky;
+    width:80px;
+    top:10px;
+    left:10px;
+    bottom:500px;
+}
+
+.sticky-container {
+    height:700px;
+    position:relative;
+}
+
+.smiley {
+    background-color: royalblue;
+    width:200px;
+    height:200px;
+    border:1px solid;
+    border-radius: 100%;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    filter:blur(10px);
+    z-index:-1;
+}
+
+.eye {
+    background-color: pink;
+    width:20px;
+    height:20px;
+    border:4px solid;
+    border-radius:100%;
+    position:absolute;
+}
+
+.left {
+    left:40px;
+    top:50px;
+}
+
+.right {
+    right:40px;
+    top:50px;
+}
+
+.mouth {
+    background-color: forestgreen;
+    width:100px;
+    height:20px;
+    border:1px solid;
+    position:absolute;
+    bottom:50px;
+    left:50px;
+}
+
+.hat {
+    background-color: saddlebrown;
+    width:100%;
+    height:50px;
+    border:1px solid;
+    position:absolute;
+    border-radius:20px 20px 0 0;
+    top:-25px;
+    left:0;
+}
