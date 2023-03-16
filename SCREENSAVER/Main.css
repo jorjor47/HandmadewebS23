@@ -17,7 +17,7 @@ body {
     align-items: center;
     flex-direction:column;
     gap:3vw;
-    animation: strech 15s linear infinite;
+    animation: strech 1s linear infinite;
 
 }
 
@@ -44,7 +44,7 @@ body {
     gap:8vw;
     align-items: center;
     
-    animation: spin 15s linear infinite;
+    animation: spin 1s linear infinite;
 }
 
 .circle{
@@ -52,7 +52,7 @@ body {
     height:2vw;
     width:2vw;
     border-radius:100%;
-    animation: shift 3s alternate infinite;
+    animation: shift 1s alternate infinite;
 }
 
 .circle2{

@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:rgb(209, 37, 37);
+    margin:0;
+    transition: 2s;
+}
+
+.screen{
+    position:absolute;
+    display: flex;
+    top:30%;
+    height:100vh;
+    width:100vw;
+}
+
+.left{
+    /* border: 2px solid; */
+    width: 25%;
+}
+
+.middle{
+    /* border: 2px solid; */
+    width: 50%;
+}
+
+.right{
+    /* border: 2px solid; */
+    width: 25%;
+}
+
+#truck2{
+    display:none
+}
+
+#truck3{
+    display:none;
+}
+
+#truck4{
+    display:none;
+}
+
+@media screen and (max-width:1200px){
+    body{
+        background:rgb(209, 53, 53);
+    }
+
+    .left{
+        width:30%;
+        transition: 1s;
+    }
+
+    .middle{
+        width:40%;
+        transition: 1s;
+    }
+
+    .right{
+        width:30%;
+        transition: 1s;
+    }
+
+    #truck1{
+        transition: 1s;
+        display:none;
+        transition: 1s;
+    }
+
+    #truck2{
+        transition: 1s;
+        display:contents;
+        transition: 1s;
+    }
+}
+
+@media screen and (max-width:1000px){
+    body{
+        background:rgb(211, 109, 109);
+    }
+
+    .left{
+        width:35%;
+        transition: 1s;
+    }
+
+    .middle{
+        width:30%;
+        transition: 1s;
+    }
+
+    .right{
+        width:35%;
+        transition: 1s;
+    }
+
+    #truck1{
+        transition: 1s;
+        display:none;
+        transition: 1s;
+    }
+
+    #truck2{
+        transition: 1s;
+        display:none;
+        transition: 1s;
+    }
+
+    #truck3{
+        display: contents;
+    }
+}
+
+@media screen and (max-width:800px){
+    body{
+        background:whitesmoke;
+    }
+
+    .left{
+        width:40%;
+        transition: 1s;
+    }
+
+    .middle{
+        width:20%;
+        transition: 1s;
+    }
+
+    .right{
+        width:40%;
+        transition: 1s;
+    }
+
+    #truck1{
+        transition: 1s;
+        display:none;
+        transition: 1s;
+    }
+
+    #truck2{
+        transition: 1s;
+        display:none;
+        transition: 1s;
+    }
+
+    #truck3{
+        display:none;
+    }
+
+    #truck4{
+        display:contents
+    }
+}
