@@ -6,11 +6,7 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <div class="topbar">
-            <div class="movinsquare">7</div>
-        </div>
-        <h1> hi i'm jordan and these are my sites</h1>
-        <p>Hello world!!!</p>
+    <div id="menuslider">
         <ul>
             <li><a href="FIRST SITE/index.html">First Site</a></li>
             <li><a href="PASSION/index.html">Passion</a></li>
@@ -19,8 +15,34 @@
             <li><a href="SCREENSAVER/index.html">Screen Saver</a></li>
             <li><a href="ACORDIAN/index.html">Accordian</a></li>
             <li><a href="JOURNAL/index.html">Journal</a></li>
+            <li><a href="control2/index.html">Control</a></li>
+        </ul>
+</div>
+        <div class="topbar">
+            <div class="movinsquare">7</div>
+        </div>
+        <h1> hi i'm jordan and these are my sites</h1>
+        <p>Hello world!!!</p>
+        <button onclick="toggleClass()">Click me...</button>
+        <ul>
+            <li><a href="FIRST SITE/index.html">First Site</a></li>
+            <li><a href="PASSION/index.html">Passion</a></li>
+            <li><a href="PASSION PART TWO/index.html">Passion Part Two</a></li>
+            <li><a href="STRUCTURE/index.html">Structure</a></li>
+            <li><a href="SCREENSAVER/index.html">Screen Saver</a></li>
+            <li><a href="ACORDIAN/index.html">Accordian</a></li>
+            <li><a href="JOURNAL/index.html">Journal</a></li>
+            <li><a href="control2/index.html">Control</a></li>
 
 
-        <!-- <p class="bigtext"> dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text </p> -->
+        <script>
+            function toggleClass() {
+
+                var menu = document.getElementById("menuslider")
+                
+                menu.classList.toggle("activated");
+            }
+
+        </script>
     </body>
     </html>

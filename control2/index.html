@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main.css">
+    <link rel="icon" type="-" href="-">
+</head>
+
+<body>
+<div class="left">
+    <div class="buttonspace">
+        <button type="button" onclick="myFunction()">Set font size</button>
+    </div>
+    <div class="buttonspace">
+        <button class="spin-btn">Spin</button>
+        <button class="color-btn">Color</button>
+    </div>
+    <div class="buttonspace">
+       <button type="button" onclick="duplicateHello()"> More greetings</button>
+
+    </div>
+    <div class="buttonspace">
+        <input
+        type="range" id="slider" value="0" step="1" min="0" max="50" 
+        oninput="change_BRadius()">
+    </div>
+</div>
+<div class="right">
+<div class="hellomessage"> <p id="hello">Hello please click all the buttons</p> </div>
+</div>
+<script>
+function myFunction() {
+    document.getElementById("hello").style.fontSize = Math.floor((Math.random() * 40) + 3)+"px";
+}
+function duplicateHello() { //change  
+    let helloClone = $('#hello').clone();
+  
+    $('.right').append(helloClone);
+    helloClone.css({
+      "right": Math.random() * window.innerWidth,
+      "top": Math.random() * window.innerHeight
+    }) }
+</script>
+
+<script src="jquery-3.6.4.min.js"></script>
+            <script src="jquery-ui.min.js"></script>
+            <script src="scripts.js"></script>
+</body>
+
+</html>

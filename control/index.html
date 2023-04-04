@@ -1,0 +1,118 @@
+<!doctype html>
+    <html>
+        <head>
+            <title>Control</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="Main.css">
+            <link rel="icon" type="-" href="-">
+
+        </head>
+
+        <body>
+            <!-- <div class="toprow">
+                <button class="dark-btn">dark</button>
+                <button class="glow-btn">glow</button>
+                <button class="spin-btn">spin</button>
+                <button class="reveal-btn">reveal</button>
+            </div> -->
+
+            <div class="drawer1">
+                <button class="drawer2-btn">unknown</button>
+            </div>
+
+            <div class="drawer2">
+                <button class="unknown">unknown</button>
+            </div>
+
+            <input type="range">
+            <input type="range" min="0" value="0" onchange="divHeight(this.value)">
+
+            <div id="testerbox">
+                
+         
+        </div>
+
+            
+        
+            <button class="dark-btn">dark</button>
+            <button class="glow-btn">glow</button>
+            <button class="spin-btn">spin</button>
+            <button class="drawer1-btn">drawer1</button>
+            <button class="reveal-btn">reveal</button>
+            <button class="random-btn">random</button>
+
+            <div class="flex">
+                <div class="box draggable"></div>
+                <div class="box draggable"></div>
+                <div class="box draggable"></div>
+            </div>
+
+            <img class="walter draggable" src="walter.webp">
+
+            <p id="myP">This is a paragraph.</p>
+
+            <div class="randomguy"></div>
+           
+
+<button type="button" onclick="myFunction()">Set font size</button>
+
+<input
+  type="range" id="slider" value="50" step="1" min="0" max="500" 
+  oninput="change_BRadius()">
+  
+ 
+
+<script>
+
+var range = document.getElementById("range");
+var box = document.getElementById("testerbox");
+
+function change_BRadius(){
+
+    var val = range.value;
+
+    // for changing border radius
+
+    box.style.borderRadius = val + "%";
+
+    testerbox.innerHTML = "border-radius: " + val +"%;";
+
+
+}
+
+function updateValue() {
+  var rangeInput = document.getElementById("rangeInput").value
+  if (rangeInput == 22) {
+    $("#testerbox").css({'background':'red'});}}
+
+function myFunction() {
+    document.getElementById("myP").style.fontSize = Math.floor((Math.random() * 40) + 3)+"px";
+
+    document.getElementById("testerbox").style = Math.floor((Math.random() * 40) + 3)+"px";
+
+
+    document.getElementsByClassName("drawer1.pulldown").height = "200";
+    document.getElementById("drawer1").height = "500";
+}
+
+function divHeight(value)
+{
+    var x = document.getElementById('div1');
+    x.style.height=value+"px"; 
+}
+
+document.querySelectorAll(".testerbox > *").forEach((div)=>{
+    div.style.height = Math.round((Math.random() * (500 - 100)) + 100);
+    var color = Math.round(Math.random()*16777215).toString(16);
+    color = "0".repeat(6 - color.length)  + color;
+    div.style.backgroundColor = "#" + color;
+});
+
+</script>
+
+
+            <script src="jquery-3.6.4.min.js"></script>
+            <script src="jquery-ui.min.js"></script>
+            <script src="scripts.js"></script>
+        </body>
+    </html>

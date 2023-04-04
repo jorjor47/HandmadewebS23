@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+    transition: 1s;
+}
+
+body.dark{
+    background:darkcyan;
+}
+
+.flex{
+display: flex;
+margin-top: 100px;
+justify-content: space-evenly;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(162, 34, 34);
+    border: 1px solid;
+    transition: 1s;
+    animation: spin 5s infinite linear;
+    animation-play-state: paused;
+}
+
+.box.dark{
+    background-color: rgb(97, 8, 26);
+}
+
+.box.glow{
+    background-color: yellow;
+    box-shadow: 0px 0px 10px 10px yellow;
+}
+
+.box.spin{
+    animation-play-state: running;
+}
+
+.walter{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    width:200px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.reveal{
+    opacity: 1;
+}
+
+.draggable{
+    cursor:grab;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

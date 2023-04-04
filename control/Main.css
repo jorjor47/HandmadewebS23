@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+button{
+    border-radius: 100%;
+}
+
+body{
+    background-color: white;
+    transition: 1s;
+    padding:0;
+}
+
+body.dark{
+    background:darkcyan;
+}
+button{
+    height:30px;
+    width:fit-content;
+    background-color:orange;
+    animation-play-state: paused;
+}
+
+button.spin{
+    animation-play-state: running;
+}
+
+:root{
+    --radius: 0;
+}
+
+#testerbox{
+    height:400px;
+    width:40px;
+    background-color: purple;
+    top:120px;
+    left:20px;
+    position: absolute;
+    border-radius: var(--radius);
+}
+
+.toprow{
+    /* top:20px; */
+    height:20vh;
+    width:100vw;
+    position:absolute;
+    background: red;
+}
+
+.drawer1{
+    position:absolute;
+    left:300px;
+    top:-200px;
+    width:400px;
+    height:200px;
+    background:purple;
+    transition: 1s;
+    align-items: center;
+    animation-play-state: paused;
+}
+
+.drawer2{
+    position:absolute;
+    left:300px;
+    top:-400px;
+    width:400px;
+    height:400px;
+    background:purple;
+    transition: 1s;
+    align-items: center;
+    animation-play-state: paused;
+}
+
+.further{
+    top:0;
+    position: absolute;
+}
+
+.pulldown{
+    top:0;
+    position: absolute;
+}
+
+.drawer1.pulldown{
+    top:600;
+}
+
+.drawer1.spin{
+    animation-play-state: running;
+}
+
+.flex{
+display: flex;
+margin-top: 100px;
+justify-content: space-evenly;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(162, 34, 34);
+    border: 1px solid;
+    transition: 1s;
+    animation: spin 5s infinite linear;
+    animation-play-state: paused;
+}
+
+.box.dark{
+    background-color: rgb(97, 8, 26);
+}
+
+.box.glow{
+    background-color: yellow;
+    box-shadow: 0px 0px 10px 10px yellow;
+}
+
+.box.spin{
+    animation-play-state: running;
+}
+
+.walter{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    width:200px;
+    opacity: 0;
+    transition: 1s;
+}
+
+
+
+
+.reveal{
+    opacity: 1;
+}
+
+.draggable{
+    cursor:grab;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
