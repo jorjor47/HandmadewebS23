@@ -1,0 +1,69 @@
+html, body {
+    margin: 0;
+    overflow: hidden;
+  }
+  canvas {
+    display:flexbox;
+  }
+  
+  h1{
+    z-index: 2;
+    top:50%;
+    left:50%;
+    position: absolute;
+  }
+
+  .sketch1{
+    padding:15px;
+    text-align: center;
+    justify-content: center;
+    left:25%;
+    height:15%;
+    width:80%;
+    /* background-color: blueviolet; */
+    border:4px solid;
+    border-color: rgb(255, 255, 255);
+    z-index: 3;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 10px 5px 5px black;
+  }
+
+  .link-spanner{
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .togglebutton{
+    position: absolute;
+    top:3%;
+    left:3%;
+  }
+
+
+  #menuslider {
+    Position:absolute;
+    display: flex;
+    flex-direction: column;
+    top:0;
+    right:-200px;
+    width:200px;
+    height:100vh;
+    background-color: grey;
+    border-left:2px solid;
+    transition: 1s;
+    z-index: 2;
+    
+}
+#menuslider.activated{
+    right:0;
+}
+
+
+/* .spawns{
+    position: absolute;
+} */

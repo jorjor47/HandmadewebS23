@@ -56,6 +56,10 @@ button.color{
     background-color: darkorange;
 }
 
+#hello{
+    position: absolute;
+}
+
 .hellomessage{
     position:absolute;
     width:fit-content;

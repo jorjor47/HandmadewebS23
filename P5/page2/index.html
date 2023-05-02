@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+        <title>Color Shift</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="-" href="-">
+
+    </head>
+
+    <body>
+        <div class="togglebutton">
+            <button onclick="toggleClass()">Click me...</button>
+            </div>
+            <div id="menuslider">
+                <!-- <div class="page1"><a href="page2/index.html"><span class="link-spanner"></span></a></div> -->
+                <a class="sketch1" href="/index.html">Home</a>
+                <a class="sketch1" href="/page3/index.html">Bouncing 7's</a>
+                <a class="sketch1" href="/page4/index.html">Sketch Pad</a>
+                <a class="sketch1" href="/page5/index.html">Shapes</a>
+                <a class="sketch1" href="/page6/index.html">Spiral</a>
+            </div>
+
+       <!-- <h1>Page2</h2>
+
+        <ul>
+            <li><a href="../index.html">page2</a></li> -->
+
+
+        <!-- <img class="walter draggable" src="walter.webp"> -->
+
+        <script>
+            function toggleClass() {
+            
+                var menu = document.getElementById("menuslider")
+                
+                menu.classList.toggle("activated");
+            }
+        </script>
+
+        <script src="p5.js"></script>
+       
+        <script src="sketch.js"></script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+        <title>Seven Space</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="-" href="-">
+
+    </head>
+
+    <body>
+
+        <h1>7</h1>
+
+        <!-- <button class="dark-btn">dark</button>
+        <button class="glow-btn">glow</button>
+        <button class="spin-btn">spin</button>
+        <button class="reveal-btn">reveal</button> -->
+
+        <!-- <div class="flex">
+            <div class="box draggable"></div>
+            <div class="box draggable"></div>
+            <div class="box draggable"></div>
+        </div> -->
+        <div class="togglebutton">
+        <button onclick="toggleClass()">Click me...</button>
+        </div>
+        <div id="menuslider">
+            <!-- <div class="page1"><a href="page2/index.html"><span class="link-spanner"></span></a></div> -->
+            <a class="sketch1" href="page2/index.html">Color Shift</a>
+            <a class="sketch1" href="page3/index.html">Bouncing 7's</a>
+            <a class="sketch1" href="page4/index.html">Sketch Pad</a>
+            <a class="sketch1" href="/index.html">Home</a>
+            <a class="sketch1" href="page6/index.html">Spiral</a>
+            
+                
+            
+            <!-- <ul>
+                <li><a href="page2/index.html">page2</a></li>
+                <li><a href="page3/index.html">page3</a></li>
+                <li><a href="page4/index.html">page4</a></li>
+                <li><a href="page5/index.html">page4</a></li>
+                <li><a href="page6/index.html">page4</a></li>
+    
+            </ul> -->
+    </div>
+
+        <!-- <ul>
+            <li><a href="page2/index.html">page2</a></li>
+            <li><a href="page3/index.html">page3</a></li>
+            <li><a href="page4/index.html">page4</a></li> -->
+
+
+        <!-- <img class="walter draggable" src="walter.webp"> -->
+
+        <script>
+            function toggleClass() {
+            
+                var menu = document.getElementById("menuslider")
+                
+                menu.classList.toggle("activated");
+            }
+        </script>
+        <script src="p5.js"></script>
+       
+        <script src="sketch2.js"></script>
+    </body>
+</html>

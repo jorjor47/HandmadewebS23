@@ -1,0 +1,76 @@
+body{
+    /* position:absolute; */
+    overflow: hidden;
+    padding:0;
+    margin: 0;
+}
+h1{
+    position: absolute;
+    color: aliceblue;
+    top:25%;
+    z-index: 2;
+}
+
+h1{
+    /* display: flex; */
+    position: absolute;
+    height: 7%;
+    width: 7%;
+    top:3%;
+    left:10%;
+    z-index: 3;
+}
+
+.sketch1{
+    padding:15px;
+    text-align: center;
+    justify-content: center;
+    left:25%;
+    height:15%;
+    width:80%;
+    /* background-color: blueviolet; */
+    border:4px solid;
+    border-color: rgb(255, 255, 255);
+    z-index: 3;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 10px 5px 5px black;
+  }
+
+.togglebutton{
+    position: absolute;
+    top:3%;
+    left:3%;
+    z-index: 3;
+  }
+
+
+  #menuslider {
+    Position:absolute;
+    display: flex;
+    flex-direction: column;
+    top:0;
+    right:-200px;
+    width:200px;
+    height:100vh;
+    background-color: grey;
+    border-left:2px solid;
+    transition: 1s;
+    z-index: 2;
+    
+}
+#menuslider.activated{
+    right:0;
+}
+
+.home{
+    position: absolute;
+    display:inline-table;
+    color: aliceblue;
+   bottom:10%;
+    z-index: 2;
+}
+
+canvas{
+    position:absolute;
+}
